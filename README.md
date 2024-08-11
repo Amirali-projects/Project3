@@ -1,2 +1,2 @@
 # project 3
-My name is Amir ali
+In this project I have put a background video and center it. I have used many css properties.
