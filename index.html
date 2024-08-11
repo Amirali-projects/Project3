@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family:sans-serif;
+        }
+        h1{
+            position:relative;
+            top:45px;
+        }
+        .hero{
+            width:100vw;
+            height:100vh;
+            filter:invert(0);
+            background-image: linear-gradient(rgba(12,3,4),rgb(15, 14, 14));
+            position:relative;
+            padding:0px;
+            justify-content:center;
+            align-items: center;
+        }
+        .text{
+           text-align: center;
+           align-content: center;
+
+        }
+        .backvideo{
+            position:absolute;
+            right:0;
+            left:0;
+            z-index: -1;
+
+        }
+        .text h1{
+            font-size: 155px;
+            color:#fff;
+            font-weight:700px;
+            transition:0.5s;
+        }
+        .text h1:hover{
+            -webkit-text-stroke: 2px #fff;
+            color:transparent;
+        }
+        .text a{
+            text-decoration: none;
+            height:45px;
+            width:23px;
+            border:1px solid black;
+            font-size:65px;
+            font-weight: 500;
+            padding:0px 5px;
+            margin:px 14px;
+            position:relative;
+            top:83px;
+             transition:4s; /* Delay from hover */
+
+        }
+      .text a:hover{
+        background-color: #fff;
+        color:black;
+      }
+      @media (min-aspect-ratio:16/9) {
+        .backvideo{
+            width:100%;
+            height:auto;
+        }
+      @media (max-aspect-ratio:16/9) {
+        .backvideo{
+            width:auto;
+            height:100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="Assets for background video/2.mp4.mp4">
+        </video>
+    <section class="text">
+        <h1>Journey</h1>
+        <a href="">Explore</a>
+        
+    </section>
+</section>
+</body>
+</html>
